@@ -16,8 +16,16 @@ class ContadorPalabras
         puts "#{palabra} #{cuenta}"
       end
     end
+    def cambiart (texto)
+      @texto = texto
+    end
+      
   end
  
   texto = "casa carro carro bicicleta"
   contador = ContadorPalabras.new(texto)
+  contador.contar_palabras
+  puts "Introduzca cadena de texto"
+  texto=$stdin.gets.chomp
+  contador.cambiart(texto)
   contador.contar_palabras
