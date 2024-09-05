@@ -15,13 +15,9 @@ class ContadorPalabras
       contador.each do |palabra, cuenta|
         puts "#{palabra} #{cuenta}"
       end
-    end   
-    def to_s
-      puts "Nombre del objeto =#{@texto}"
     end
   end
  
   texto = "casa carro carro bicicleta"
   contador = ContadorPalabras.new(texto)
   contador.contar_palabras
-  contador.to_s
